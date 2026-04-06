@@ -1,10 +1,27 @@
-시험 안내를 위한 파일입니다.
+1. 2
+2. index [1]
+3. 짝수입니다.
+4. 에러 /number:10
+5. "likeCount"= count 
+6. const.addEventListener("function",()=>{
+console.log("자바스크립트 마스터를 해보자!");
+});
+7. const isLogin?console.log(환영합니다):console.log(접근 권한이 없습니다);
+8. do {
+   let userInput=prompt("무엇을 말하고 싶나요?");
+    } while (userInput=="끝")
+9. let userInput=prompt("숫자를 입력하세요:");
+    while( )
+    let sum=0;
+    sum=++1;
+    alert("1부터"+userInput+"까지의 합은"+sum+"입니다.");
+10. a=4 arr=["old", 10, 233, true, "new"]
+b=2 arr=["old", 10, 233]
+11.
+12. let.person={hobby="deawing"};
+13.document.getElementById{
+addEventListen("click",()=>{
+change= likelion_n
+n=+1
+})};
 
-문제 당 파일 하나에 답안을 작성하거나, 
-모든 문제의 답안을 하나의 파일에 작성하거나, 
-확장자를 js/txt로 하느냐는 자유입니다.
-
-답안 작성은 자유이지만,
-운영진이 알아보지 못하게 기재하셨을 시 오답처리되는 점 유의바랍니다.
-
-그럼 파이팅~~🦁❤️
