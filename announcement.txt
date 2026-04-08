@@ -1,27 +1,85 @@
 1. 2
 2. index [1]
+답= console.log(fruits[1]);
+인덱스는 0부터 시작함. 화면에 출력하기 위해서는 console.log() 안에 넣어야함.
 3. 짝수입니다.
 4. 에러 /number:10
+답=아무것도 출력되지 않음./ number : 9
+while문은 조건을 먼저 검사한 후 참일 때만 내부 코드를 실행함. 초기값은 9이고 처음부터 false이기 때문에 아무것도 출력되지 않는다.
+do-while문에서는 초기값이 do 블록 안으로 들어가 화면에 number : 9가 출력됨. 그리고 num-- 코드가 실행돼 num은 8이 됨. 8은 10보다 크지 않으므로 조건이 거짓이 되어 반복문 종료.
 5. "likeCount"= count 
+답=textContent = count
+텍스트를 바꾸기 위해 textContent 속성을 사용해야한다.
 6. const.addEventListener("function",()=>{
 console.log("자바스크립트 마스터를 해보자!");
 });
+답=const lion = () => {
+    console.log("자바스크립트 마스터를 해보자!");
+}
+변경 과정!!
+변경 전: const lion =  function () { ... }
+변경 후: const lion = ()  =>  { ... }
 7. const isLogin?console.log(환영합니다):console.log(접근 권한이 없습니다);
+답=const isLogin = true;
+const answer = isLogin ? "환영합니다!" : "접근 권한이 없습니다.";
+console.log(answer);
+삼항연산자를 이용하고, 답을 출력한다.
 8. do {
    let userInput=prompt("무엇을 말하고 싶나요?");
     } while (userInput=="끝")
+답=let userInput;
+do {
+  userInput = prompt("무엇을 말하고 싶나요?");
+} while (userInput !== "끝");
+먼저 사용자의 입력을 저장할 변수를 만들어줘야함.중괄호 안의 코드를 실행하고 조건을 검사한다. !== 기호는 '다르다면(같지 않다면)'이라는 뜻.
 9. let userInput=prompt("숫자를 입력하세요:");
     while( )
     let sum=0;
     sum=++1;
     alert("1부터"+userInput+"까지의 합은"+sum+"입니다.");
+답=let userInput = prompt("숫자를 입력하세요:");
+let num = Number(userInput); //문자를 숫자로 형변환한다
+let sum = 0; // 합계를 저장할 변수 설정하기
+let i = 1;   // 1부터 더하기 시작할 카운터 변수
+while (i <= num) {
+  sum += i; // sum = sum + i 와 같은 뜻
+  i++;      // i를 1씩 증가시킴
+}
+alert("1부터 " + userInput + "까지의 합은 " + sum + "입니다.");
 10. a=4 arr=["old", 10, 233, true, "new"]
 b=2 arr=["old", 10, 233]
-11.
+답=왼쪽 (push 적용 시):
+a = 5// a에는 새로운 길이인 5가 들어가야됨.
+arr = ["old", 10, 233, true, "new"]
+오른쪽 (shift 적용 시):
+b = "old"
+arr = [10, 233, true]// shift는 배열의 맨 앞에 있는 요소를 제거함 & “삭제된 값”을 반환함
+11.답=appendChild
+createElement로 새로 만든 태그는 화면에 보이지 않음 appendChild는 이렇게 만들어진 태그를 기존에 있던 부모 태그(ul) 안에 마지막 자식으로 붙여줌.
 12. let.person={hobby="deawing"};
+답=점 표기법: person.hobby = "drawing";//객체 이름(person) 뒤에 점을 찍고 새로운 키(hobby)를 적은 뒤, 값("drawing")을 할당.
+괄호 표기법: person["hobby"] = "drawing";//대괄호 안에 키를 따옴표를 씌운 문자열 형태로 적음.
 13.document.getElementById{
 addEventListen("click",()=>{
 change= likelion_n
 n=+1
 })};
+답=let count = 1;
+function change() {
+  count++;
+  document.getElementById("name").innerText = "likelion_" + count;
+}
+함수 바깥에 클릭 횟수 변수(count)를 만들고, 버튼이 클릭될 때 실행되는 change 함수 안에서 이 숫자를 1씩 증가시킨다.
+document.getElementById("name")을 사용해 글자가 적힌 <span> 태그(화면 요소)를 찾아온다.
+찾아온 태그의 글자를 바꾸기 위해 .innerText 속성을 사용하고, 거기에 "likelion_" + count를 넣어주면 클릭할 때마다 숫자가 올라가며 화면이 바뀜.
+14.답=const btn = document.getElementById("btn");
+btn.addEventListener("click", () => {
+  alert("버튼이 클릭됨!");
+});
 
+const btn = document.getElementById("btn");
+btn.onclick = () => {
+  alert("버튼이 클릭됨!");
+};
+addEventListener("click", ...)은 이벤트를 여러 개 등록할 수 있고,
+onclick = ...은 하나만 등록되는 방식.
